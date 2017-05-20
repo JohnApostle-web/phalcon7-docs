@@ -632,6 +632,11 @@
 
 <span class="nv">$customers</span> <span class="o">=</span> <span class="nx">Customers</span><span class="o">::</span><span class="na">find</span><span class="p">();</span>
 <span class="nv">$arr</span> <span class="o">=</span> <span class="nv">$customers</span><span class="o">-&gt;</span><span class="na">toArray</span><span class="p">();</span>
+
+<span class="nv">$columns</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;id&#39;</span><span class="p">,</span> <span class="s1">&#39;name&#39;</span><span class="p">);</span> <span class="c1">// 需要输出的字段</span>
+<span class="nv">$rename</span> <span class="o">=</span> <span class="k">true</span><span class="p">;</span> <span class="c1">// 字段名是否是映射后的名称</span>
+<span class="nv">$negate</span> <span class="o">=</span> <span class="k">false</span><span class="p">;</span>
+<span class="nv">$arr</span> <span class="o">=</span> <span class="nv">$customers</span><span class="o">-&gt;</span><span class="na">toArray</span><span class="p">(</span><span class="nv">$columns</span><span class="p">,</span> <span class="nv">$rename</span><span class="p">,</span> <span class="nv">$negate</span><span class="p">);</span>
 </pre></div>
 </div>
 </div>
