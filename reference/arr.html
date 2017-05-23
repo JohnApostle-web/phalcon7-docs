@@ -110,8 +110,8 @@
 <h2>获取值（Gets Value）<a class="headerlink" href="#gets-value" title="永久链接至标题">¶</a></h2>
 <div class="highlight-php"><div class="highlight"><pre><span></span><span class="cp">&lt;?php</span>
 
-    <span class="nv">$_GET</span><span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
-    <span class="nv">$_GET</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;phalcon&#39;</span><span class="p">,</span> <span class="s1">&#39;phalcon7&#39;</span><span class="p">);</span>
+<span class="nv">$_GET</span><span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
+<span class="nv">$_GET</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;phalcon&#39;</span><span class="p">,</span> <span class="s1">&#39;phalcon7&#39;</span><span class="p">);</span>
 
 <span class="nv">$value</span> <span class="o">=</span> <span class="nx">\Phalcon\Arr</span><span class="o">::</span><span class="na">get</span><span class="p">(</span><span class="nv">$_GET</span><span class="p">,</span> <span class="s1">&#39;name&#39;</span><span class="p">);</span> <span class="c1">// 值为数组 array(&#39;phalcon&#39;, &#39;phalcon7&#39;)</span>
 <span class="nv">$value</span> <span class="o">=</span> <span class="nx">\Phalcon\Arr</span><span class="o">::</span><span class="na">first</span><span class="p">(</span><span class="nv">$_GET</span><span class="p">,</span> <span class="s1">&#39;name&#39;</span><span class="p">);</span> <span class="c1">// 值为 phalcon</span>
